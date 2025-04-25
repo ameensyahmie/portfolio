@@ -2,61 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ameen Syahmie Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-gradient-custom {
+            background: linear-gradient(to bottom, #f0f4f8, #e0e8f0); /* Light background gradient */
+        }
+        .text-highlight {
+            color: #007bff; /* Highlight color */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Shadow */
+        }
+        .shadow-hover:hover {
+             box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15), 0 3px 5px -1px rgba(0, 0, 0, 0.08); /* Increased shadow on hover*/
+        }
+
+    </style>
 </head>
-<body>
-    <h1>Ameen Syahmie</h1>
-    <p>Graphic Designer & Content Creator</p>
-
-    <h2>About Me</h2>
-    <p>I’m a passionate and adaptable creative with hands-on experience in branding, motion graphics, and social media content. I enjoy telling visual stories and building designs that help businesses grow and connect with their audiences.</p>
-
-    <h2>Skills</h2>
-    <ul>
-        <li>Adobe Photoshop, Illustrator, InDesign</li>
-        <li>Video Editing (Premiere Pro, CapCut)</li>
-        <li>Photography & Videography</li>
-        <li>Social Media Content Creation (TikTok, IG, FB, YouTube)</li>
-        <li>Branding, Logo & Packaging Design</li>
-    </ul>
-
-    <h2>Work Experience</h2>
-    <ul>
-        <li><strong>Creative & Marketing Executive</strong> – Qash QR Holdings<br>Dec 2023 – Apr 2025</li>
-        <li><strong>Barista & Kitchen Crew</strong> – Bask Bear Coffee<br>May 2023 – Oct 2023</li>
-        <li><strong>Graphic Design Intern</strong> – Embun Design Studio<br>Apr 2022 – Aug 2022</li>
-    </ul>
-
-    <h2>Featured Projects</h2>
-    <div class="projects">
-        <div class="project-card">
-            <iframe src="https://www.youtube.com/embed/MaheOZkJS8o" frameborder="0" allowfullscreen></iframe>
-            <h3>QR Car Rental – Promo Short 1</h3>
-            <p>Short-form video created for QR Car Rental, showcasing brand promotion and storytelling through visuals.</p>
+<body class="bg-gradient-custom text-gray-800">
+    <header class="container mx-auto px-4 py-6 md:py-10">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-2xl font-semibold text-gray-900">Ameen Syahmie</h1>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="project-card">
-            <iframe src="https://www.youtube.com/embed/eQ9iiAlIkG4" frameborder="0" allowfullscreen></iframe>
-            <h3>QR Car Rental – Promo Short 2</h3>
-            <p>Another engaging short video promoting QR Car Rental, edited with motion effects to boost reach on TikTok/YouTube.</p>
-        </div>
-        <div class="project-card">
-            <iframe src="https://www.youtube.com/embed/Kj-yD7J3Q4w" frameborder="0" allowfullscreen></iframe>
-            <h3>QR Car Rental – Promo Short 3</h3>
-            <p>Visually dynamic content built for marketing campaigns with a mobile-first approach.</p>
-        </div>
-    </div>
+    </header>
 
-    <h2>Links</h2>
-    <p>
-        <a href="https://www.behance.net/ameensyahmie" target="_blank">View my Behance Portfolio</a><br>
-        <a href="https://www.linkedin.com/in/ameensyahmie" target="_blank">Visit my LinkedIn Profile</a>
-    </p>
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="mb-12">
+            <div class="card p-6 shadow-md">
+                <h2 class="text-3xl font-semibold text-gray-900 mb-4">About Me</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Hello! I'm Ameen Syahmie, a passionate graphic designer and content creator. I specialize in creating visually appealing and engaging designs that help businesses communicate their message effectively. My skills include branding, video editing, and social media content creation.
+                </p>
+            </div>
+        </section>
 
-    <h2>Contact</h2>
-    <p>
-        📞 +60 19 951 5075<br>
-        📧 ameen.syh@gmail.com
-    </p>
+        <section id="projects" class="mb-12">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-4 shadow-md shadow-hover transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Project 1</h3>
+                    <p class="text-gray-600">Description of project 1.  This could be a branding project, a video campaign, or a website design.</p>
+                    <div class="mt-4">
+                        <img src="https://placehold.co/400x300" alt="Project 1" class="rounded-md w-full">
+                    </div>
+                </div>
+                <div class="card p-4 shadow-md shadow-hover transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Project 2</h3>
+                    <p class="text-gray-600">Description of project 2.  This could be a social media campaign or a series of marketing materials.</p>
+                     <div class="mt-4">
+                        <img src="https://placehold.co/400x300" alt="Project 2" class="rounded-md w-full">
+                    </div>
+                </div>
+                <div class="card p-4 shadow-md shadow-hover transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Project 3</h3>
+                    <p class="text-gray-600">Description of project 3. This could be packaging design or a motion graphics piece.</p>
+                     <div class="mt-4">
+                         <img src="https://placehold.co/400x300" alt="Project 3" class="rounded-md w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="card p-6 shadow-md">
+                <h2 class="text-3xl font-semibold text-gray-900 mb-4">Contact Me</h2>
+                <p class="text-gray-600 mb-4">
+                    I'm always open to new projects and collaborations. Feel free to reach out to me through the following channels:
+                </p>
+                <ul class="list-none space-y-2">
+                    <li>Email: ameen.syh@gmail.com</li>
+                    <li>Phone: +60 19 951 5075</li>
+                    <li><a href="https://www.behance.net/ameensyahmie" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors">Behance</a></li>
+                    <li><a href="https://www.linkedin.com/in/ameensyahmie" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors">LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 text-gray-600 py-4 text-center mt-8">
+        <p>© 2025 Ameen Syahmie. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Optional: You can add some simple JavaScript here, for example, to smooth scroll to sections
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
